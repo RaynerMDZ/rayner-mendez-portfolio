@@ -26,20 +26,20 @@ const Contact = () => {
                 
                 <div className="space-y-4">
                   <a
-                    href="mailto:alex.richardson@example.com"
+                    href="mailto:raynermendezg@gmail.com"
                     className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-all duration-300 group hover-lift"
                   >
                     <Mail size={20} className="text-tech-accent" />
                     <div>
                       <div className="font-medium group-hover:text-tech-accent transition-colors">
-                        alex.richardson@example.com
+                        raynermendezg@gmail.com
                       </div>
                       <div className="text-sm text-muted-foreground">Primary Email</div>
                     </div>
                   </a>
                   
                   <a
-                    href="https://github.com"
+                    href="https://github.com/raynermdz"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-all duration-300 group hover-lift"
@@ -47,14 +47,14 @@ const Contact = () => {
                     <Github size={20} className="text-tech-accent" />
                     <div>
                       <div className="font-medium group-hover:text-tech-accent transition-colors">
-                        github.com/alexrichardson
+                        github.com/raynermdz
                       </div>
                       <div className="text-sm text-muted-foreground">Open Source Portfolio</div>
                     </div>
                   </a>
                   
                   <a
-                    href="https://linkedin.com"
+                    href="https://linkedin.com/in/raynermendez"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-all duration-300 group hover-lift"
@@ -62,7 +62,7 @@ const Contact = () => {
                     <Linkedin size={20} className="text-tech-accent" />
                     <div>
                       <div className="font-medium group-hover:text-tech-accent transition-colors">
-                        linkedin.com/in/alexrichardson
+                        linkedin.com/in/raynermendez
                       </div>
                       <div className="text-sm text-muted-foreground">Professional Network</div>
                     </div>
@@ -79,7 +79,7 @@ const Contact = () => {
                   <div className="flex items-start space-x-3">
                     <MapPin size={20} className="text-tech-accent mt-0.5" />
                     <div>
-                      <div className="font-medium">San Francisco, CA</div>
+                      <div className="font-medium">Jersey City, NJ</div>
                       <div className="text-sm text-muted-foreground">Open to remote opportunities</div>
                     </div>
                   </div>
@@ -96,10 +96,10 @@ const Contact = () => {
                 <div className="pt-4">
                   <h4 className="font-medium mb-3">Interested in:</h4>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">Backend Architecture</Badge>
+                    <Badge variant="secondary">Software Architecture</Badge>
                     <Badge variant="secondary">System Design</Badge>
-                    <Badge variant="secondary">DevOps</Badge>
-                    <Badge variant="secondary">Mentoring</Badge>
+                    <Badge variant="secondary">AI</Badge>
+                    <Badge variant="secondary">LLMs</Badge>
                     <Badge variant="secondary">Open Source</Badge>
                   </div>
                 </div>

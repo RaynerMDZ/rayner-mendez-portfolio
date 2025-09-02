@@ -5,35 +5,35 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
-      skills: ["Java", "Python", "JavaScript", "TypeScript", "Go", "SQL"]
+      skills: ["Java", "Python", "JavaScript", "TypeScript", "SQL"]
     },
     {
       title: "Frameworks & Libraries",
-      skills: ["Spring Boot", "Django", "Flask", "Node.js", "Express.js", "Hibernate"]
+      skills: ["Spring Boot", "Angular", "Node.js", "Express.js", "JPA/Hibernate", "Tailwind.css"]
     },
     {
       title: "Databases & Storage",
-      skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Elasticsearch", "InfluxDB"]
+      skills: ["Oracle", "PostgreSQL", "MySQL", "MongoDB", "Redis"]
     },
     {
       title: "Cloud & DevOps",
-      skills: ["AWS", "Docker", "Kubernetes", "Terraform", "Jenkins", "GitLab CI"]
+      skills: ["Google Cloud Platform", "Docker", "OpenShift", "Lightspeed", "Harness"]
     },
     {
       title: "Message Queues & Streaming",
-      skills: ["Apache Kafka", "RabbitMQ", "Apache Pulsar", "AWS SQS", "Redis Pub/Sub"]
+      skills: ["Apache Kafka", "RabbitMQ"]
     },
     {
       title: "Monitoring & Observability",
-      skills: ["Prometheus", "Grafana", "ELK Stack", "Jaeger", "DataDog", "New Relic"]
+      skills: ["Prometheus", "Grafana", "ELK Stack"]
     },
     {
       title: "Architecture & Patterns",
-      skills: ["Microservices", "Event-Driven", "CQRS", "Domain-Driven Design", "REST APIs", "GraphQL"]
+      skills: ["Microservices", "Event-Driven", "Domain-Driven Design", "REST APIs", "GraphQL"]
     },
     {
       title: "Testing & Quality",
-      skills: ["JUnit", "Mockito", "pytest", "Integration Testing", "Load Testing", "TDD"]
+      skills: ["JUnit", "Mockito", "Integration Testing", "Load Testing", "TDD", "Regression Testing", "Code Coverage", "Code Review", "Continuous Integration", "Continuous Deployment", "Continuous Monitoring"]
     }
   ];
 

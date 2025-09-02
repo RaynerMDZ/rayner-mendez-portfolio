@@ -70,14 +70,14 @@ const Hero = () => {
           
           <div className="flex items-center justify-center space-x-8 pt-8">
             <a
-              href="mailto:alex@example.com"
+              href="mailto:raynermendezg@gmail.com"
               className="flex items-center space-x-2 text-muted-foreground hover:text-tech-accent transition-all duration-300 hover-lift group"
             >
               <Mail size={20} className="group-hover:animate-float" />
               <span className="font-medium">Email</span>
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/raynermdz"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-muted-foreground hover:text-tech-accent transition-all duration-300 hover-lift group"
@@ -86,7 +86,7 @@ const Hero = () => {
               <span className="font-medium">GitHub</span>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/raynermendez"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-muted-foreground hover:text-tech-accent transition-all duration-300 hover-lift group"

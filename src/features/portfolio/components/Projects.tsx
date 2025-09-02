@@ -17,48 +17,6 @@ const Projects = () => {
       githubUrl: "https://github.com",
       liveUrl: null,
       metrics: "2M+ Users, 99.9% Uptime, <100ms Response Time"
-    },
-    {
-      title: "Real-time Analytics Engine",
-      description: "High-throughput data processing system for real-time analytics. Processes 1TB+ of data daily with sub-second query response times.",
-      techDetails: [
-        "Implemented streaming data pipeline with Apache Kafka and Spark",
-        "Built real-time dashboard APIs serving 50K+ queries/hour",
-        "Optimized data storage with time-series database design",
-        "Implemented auto-scaling based on data volume"
-      ],
-      technologies: ["Python", "Apache Spark", "Kafka", "InfluxDB", "Redis", "Grafana"],
-      githubUrl: "https://github.com",
-      liveUrl: null,
-      metrics: "1TB+ Daily Processing, <1s Query Time"
-    },
-    {
-      title: "Payment Processing System",
-      description: "Secure, PCI-compliant payment processing system handling $10M+ in monthly transactions with zero downtime.",
-      techDetails: [
-        "Designed fault-tolerant payment processing workflow",
-        "Implemented idempotent API design for transaction safety",
-        "Built comprehensive fraud detection system",
-        "Achieved PCI DSS Level 1 compliance"
-      ],
-      technologies: ["Java", "Spring Security", "PostgreSQL", "Redis", "AWS Lambda"],
-      githubUrl: "https://github.com",
-      liveUrl: null,
-      metrics: "$10M+ Monthly Volume, 0 Downtime"
-    },
-    {
-      title: "Open Source Monitoring Tool",
-      description: "Lightweight monitoring solution for microservices. Features automatic service discovery and intelligent alerting.",
-      techDetails: [
-        "Built service discovery mechanism using Consul",
-        "Implemented custom metrics collection with Prometheus",
-        "Created intelligent alerting with machine learning",
-        "Designed plugin architecture for extensibility"
-      ],
-      technologies: ["Go", "Prometheus", "Grafana", "Consul", "Docker"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://demo.example.com",
-      metrics: "500+ GitHub Stars, 50+ Contributors"
     }
   ];
 
