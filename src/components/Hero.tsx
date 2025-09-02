@@ -1,7 +1,6 @@
 import { Badge } from '@/components/ui/badge';
 import { Github, Linkedin, Mail } from 'lucide-react';
-// Temporarily remove image import to fix loading issue
-// import profileImage from '@/assets/profile-picture.jpg';
+import profileImage from '@/assets/profile-picture.jpg';
 
 const Hero = () => {
   return (
@@ -14,9 +13,12 @@ const Hero = () => {
           {/* Profile Picture */}
           <div className="flex justify-center mb-8">
             <div className="relative">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-tech animate-glow bg-gradient-to-br from-tech-accent/20 to-tech-accent/10 flex items-center justify-center">
-                {/* Temporary placeholder until image loads properly */}
-                <div className="text-4xl font-bold text-tech-accent">RM</div>
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-tech animate-glow">
+                <img 
+                  src={profileImage} 
+                  alt="Alex Richardson - Backend Engineer" 
+                  className="w-full h-full object-cover hover-lift"
+                />
               </div>
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-tech-accent/20 to-transparent"></div>
             </div>
@@ -24,7 +26,7 @@ const Hero = () => {
           
           <div className="space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-foreground to-tech-accent bg-clip-text text-transparent">
-              Rayner Mendez
+              Alex Richardson
             </h1>
             <div className="flex flex-wrap justify-center gap-3">
               <Badge variant="secondary" className="text-sm hover-glow px-4 py-2">
@@ -43,7 +45,7 @@ const Hero = () => {
           
           <div className="flex items-center justify-center space-x-8 pt-8">
             <a
-              href="mailto:rayner@example.com"
+              href="mailto:alex@example.com"
               className="flex items-center space-x-2 text-muted-foreground hover:text-tech-accent transition-all duration-300 hover-lift group"
             >
               <Mail size={20} className="group-hover:animate-float" />

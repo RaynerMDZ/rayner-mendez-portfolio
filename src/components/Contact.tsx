@@ -26,20 +26,20 @@ const Contact = () => {
                 
                 <div className="space-y-4">
                   <a
-                    href="mailto:rayner.mendez@example.com"
+                    href="mailto:alex.richardson@example.com"
                     className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-all duration-300 group hover-lift"
                   >
                     <Mail size={20} className="text-tech-accent" />
                     <div>
                       <div className="font-medium group-hover:text-tech-accent transition-colors">
-                        rayner.mendez@example.com
+                        alex.richardson@example.com
                       </div>
                       <div className="text-sm text-muted-foreground">Primary Email</div>
                     </div>
                   </a>
                   
                   <a
-                    href="https://github.com/raynermendez"
+                    href="https://github.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-all duration-300 group hover-lift"
@@ -47,14 +47,14 @@ const Contact = () => {
                     <Github size={20} className="text-tech-accent" />
                     <div>
                       <div className="font-medium group-hover:text-tech-accent transition-colors">
-                        github.com/raynermendez
+                        github.com/alexrichardson
                       </div>
                       <div className="text-sm text-muted-foreground">Open Source Portfolio</div>
                     </div>
                   </a>
                   
                   <a
-                    href="https://linkedin.com/in/raynermendez"
+                    href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-all duration-300 group hover-lift"
@@ -62,7 +62,7 @@ const Contact = () => {
                     <Linkedin size={20} className="text-tech-accent" />
                     <div>
                       <div className="font-medium group-hover:text-tech-accent transition-colors">
-                        linkedin.com/in/raynermendez
+                        linkedin.com/in/alexrichardson
                       </div>
                       <div className="text-sm text-muted-foreground">Professional Network</div>
                     </div>

@@ -10,7 +10,7 @@ const About = () => {
           
           <div className="max-w-3xl mx-auto space-y-6 text-lg leading-relaxed">
             <p className="text-muted-foreground">
-              I'm Rayner Mendez, a Backend Engineer with over 5 years of experience designing and implementing 
+              I'm a Backend Engineer with over 5 years of experience designing and implementing 
               robust, scalable systems. My passion lies in solving complex technical challenges 
               and building software that can handle millions of users while maintaining clean, 
               maintainable code.
