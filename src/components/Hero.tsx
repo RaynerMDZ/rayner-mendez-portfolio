@@ -1,6 +1,7 @@
 import { Badge } from '@/components/ui/badge';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import profileImage from '@/assets/profile-picture.jpg';
+// Temporarily remove image import to fix loading issue
+// import profileImage from '@/assets/profile-picture.jpg';
 
 const Hero = () => {
   return (
@@ -13,12 +14,9 @@ const Hero = () => {
           {/* Profile Picture */}
           <div className="flex justify-center mb-8">
             <div className="relative">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-tech animate-glow">
-                <img 
-                  src={profileImage} 
-                  alt="Rayner Mendez - Backend Engineer" 
-                  className="w-full h-full object-cover hover-lift"
-                />
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-tech animate-glow bg-gradient-to-br from-tech-accent/20 to-tech-accent/10 flex items-center justify-center">
+                {/* Temporary placeholder until image loads properly */}
+                <div className="text-4xl font-bold text-tech-accent">RM</div>
               </div>
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-tech-accent/20 to-transparent"></div>
             </div>
