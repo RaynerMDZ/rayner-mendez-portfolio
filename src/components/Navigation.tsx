@@ -27,7 +27,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center">
           <button 
             onClick={() => scrollToSection('hero')}
-            className="text-lg font-semibold hover:text-tech-accent transition-colors"
+            className="hidden md:block text-lg font-semibold hover:text-tech-accent transition-colors"
           >
             Portfolio
           </button>
