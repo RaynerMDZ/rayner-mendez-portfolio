@@ -54,6 +54,9 @@ const Hero = () => {
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-foreground to-tech-accent bg-clip-text text-transparent">
               Rayner Mendezl
             </h1>
+            <p className="text-xl md:text-2xl text-tech-muted font-medium">
+              Software Engineer | Cloud Engineer | LLMs
+            </p>
           </div>
           
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
