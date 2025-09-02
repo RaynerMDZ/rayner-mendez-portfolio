@@ -20,7 +20,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+    <nav className={`hidden md:block fixed top-0 w-full z-50 transition-all duration-300 ${
       isScrolled ? 'bg-background/95 backdrop-blur-sm border-b border-border' : 'bg-transparent'
     }`}>
       <div className="max-w-4xl mx-auto px-6 py-4">
