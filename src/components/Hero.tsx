@@ -5,8 +5,18 @@ import profileImage from '@/assets/profile-picture.jpg';
 const Hero = () => {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 gradient-tech opacity-50"></div>
+      {/* Modern animated background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/10"></div>
+      <div className="absolute inset-0 bg-gradient-to-tr from-tech-accent/5 via-transparent to-tech-accent/10 animate-pulse"></div>
+      
+      {/* Geometric elements */}
+      <div className="absolute top-20 left-10 w-32 h-32 bg-tech-accent/10 rounded-full blur-xl animate-float"></div>
+      <div className="absolute bottom-20 right-10 w-48 h-48 bg-tech-accent/5 rounded-full blur-2xl animate-pulse"></div>
+      <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-r from-tech-accent/10 to-transparent rounded-lg rotate-45 animate-glow"></div>
+      <div className="absolute bottom-1/3 right-1/3 w-16 h-16 bg-tech-accent/15 rounded-lg rotate-12 animate-float"></div>
+      
+      {/* Grid pattern overlay */}
+      <div className="absolute inset-0 opacity-[0.02] bg-[radial-gradient(circle_at_1px_1px,_hsl(var(--tech-accent))_1px,_transparent_0)] bg-[size:24px_24px]"></div>
       
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
         <div className="space-y-8 animate-fadeInUp">
