@@ -55,7 +55,7 @@ const Experience = () => {
           
           <div className="space-y-8">
             {experiences.map((exp, index) => (
-              <Card key={index} className="border-l-4 border-l-tech-accent">
+              <Card key={index} className="border-l-4 border-l-tech-accent hover-lift hover-glow transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="space-y-4">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between">

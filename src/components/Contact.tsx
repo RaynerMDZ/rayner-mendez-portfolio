@@ -20,14 +20,14 @@ const Contact = () => {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <Card>
+            <Card className="hover-lift transition-all duration-300">
               <CardContent className="p-6 space-y-6">
                 <h3 className="text-xl font-semibold">Professional Links</h3>
                 
                 <div className="space-y-4">
                   <a
                     href="mailto:alex.richardson@example.com"
-                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-colors group"
+                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-all duration-300 group hover-lift"
                   >
                     <Mail size={20} className="text-tech-accent" />
                     <div>
@@ -42,7 +42,7 @@ const Contact = () => {
                     href="https://github.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-colors group"
+                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-all duration-300 group hover-lift"
                   >
                     <Github size={20} className="text-tech-accent" />
                     <div>
@@ -57,7 +57,7 @@ const Contact = () => {
                     href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-colors group"
+                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-all duration-300 group hover-lift"
                   >
                     <Linkedin size={20} className="text-tech-accent" />
                     <div>
@@ -71,7 +71,7 @@ const Contact = () => {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="hover-lift transition-all duration-300">
               <CardContent className="p-6 space-y-6">
                 <h3 className="text-xl font-semibold">Currently</h3>
                 

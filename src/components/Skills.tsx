@@ -48,9 +48,9 @@ const Skills = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
             {skillCategories.map((category, index) => (
-              <Card key={index} className="h-full">
+              <Card key={index} className="h-full hover-lift transition-all duration-300 group">
                 <CardHeader>
-                  <CardTitle className="text-lg font-semibold text-tech-accent">
+                  <CardTitle className="text-lg font-semibold text-tech-accent group-hover:text-primary transition-colors">
                     {category.title}
                   </CardTitle>
                 </CardHeader>
@@ -60,7 +60,7 @@ const Skills = () => {
                       <Badge 
                         key={idx} 
                         variant="secondary" 
-                        className="text-sm hover:bg-tech-accent hover:text-white transition-colors cursor-default"
+                        className="text-sm hover:bg-tech-accent hover:text-white transition-all duration-300 hover:scale-105 cursor-default"
                       >
                         {skill}
                       </Badge>

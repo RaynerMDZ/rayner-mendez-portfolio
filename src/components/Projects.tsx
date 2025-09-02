@@ -73,10 +73,10 @@ const Projects = () => {
           
           <div className="grid lg:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="h-full flex flex-col">
+              <Card key={index} className="h-full flex flex-col hover-lift hover-glow transition-all duration-300 group">
                 <CardHeader>
                   <div className="flex items-start justify-between">
-                    <CardTitle className="text-xl font-semibold">
+                    <CardTitle className="text-xl font-semibold group-hover:text-tech-accent transition-colors">
                       {project.title}
                     </CardTitle>
                     <div className="flex space-x-2">
@@ -84,7 +84,7 @@ const Projects = () => {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-tech-accent transition-colors"
+                        className="text-muted-foreground hover:text-tech-accent transition-all duration-300 hover:scale-110"
                       >
                         <Github size={20} />
                       </a>
@@ -93,7 +93,7 @@ const Projects = () => {
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-muted-foreground hover:text-tech-accent transition-colors"
+                          className="text-muted-foreground hover:text-tech-accent transition-all duration-300 hover:scale-110"
                         >
                           <ExternalLink size={20} />
                         </a>

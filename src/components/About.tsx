@@ -32,16 +32,16 @@ const About = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 pt-8">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-tech-accent">5+</div>
+            <div className="text-center group hover-lift transition-all duration-300">
+              <div className="text-2xl font-bold text-tech-accent group-hover:scale-110 transition-transform">5+</div>
               <div className="text-muted-foreground">Years Experience</div>
             </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-tech-accent">20+</div>
+            <div className="text-center group hover-lift transition-all duration-300">
+              <div className="text-2xl font-bold text-tech-accent group-hover:scale-110 transition-transform">20+</div>
               <div className="text-muted-foreground">Projects Delivered</div>
             </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-tech-accent">99.9%</div>
+            <div className="text-center group hover-lift transition-all duration-300">
+              <div className="text-2xl font-bold text-tech-accent group-hover:scale-110 transition-transform">99.9%</div>
               <div className="text-muted-foreground">System Uptime</div>
             </div>
           </div>
