@@ -13,10 +13,10 @@ const Hero = () => {
           {/* Profile Picture */}
           <div className="flex justify-center mb-8">
             <div className="relative">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-tech animate-glow">
+              <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-tech animate-glow">
                 <img 
                   src={profileImage} 
-                  alt="Alex Richardson - Backend Engineer" 
+                  alt="Rayner Mendezl - Backend Engineer" 
                   className="w-full h-full object-cover hover-lift"
                 />
               </div>
@@ -26,7 +26,7 @@ const Hero = () => {
           
           <div className="space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-foreground to-tech-accent bg-clip-text text-transparent">
-              Alex Richardson
+              Rayner Mendezl
             </h1>
             <div className="flex flex-wrap justify-center gap-3">
               <Badge variant="secondary" className="text-sm hover-glow px-4 py-2">
