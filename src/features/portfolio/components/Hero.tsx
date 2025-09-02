@@ -19,6 +19,13 @@ const Hero = () => {
         <div className="absolute bottom-1/3 left-1/2 w-1.5 h-1.5 bg-tech-accent/30 rounded-full animate-pulse" style={{animationDelay: '3s'}}></div>
       </div>
       
+      {/* Additional background elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-10 right-1/4 w-40 h-40 bg-gradient-to-br from-tech-accent/20 to-transparent rounded-full blur-xl animate-float" style={{animationDelay: '4s'}}></div>
+        <div className="absolute bottom-10 left-1/4 w-60 h-60 bg-gradient-to-tl from-tech-accent/15 to-transparent rounded-full blur-2xl animate-float" style={{animationDelay: '6s'}}></div>
+        <div className="absolute top-1/2 right-10 w-32 h-32 bg-gradient-to-l from-tech-accent/25 to-transparent rounded-full blur-lg animate-float" style={{animationDelay: '2.5s'}}></div>
+      </div>
+      
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="w-full h-full" style={{
@@ -47,14 +54,6 @@ const Hero = () => {
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-foreground to-tech-accent bg-clip-text text-transparent">
               Rayner Mendezl
             </h1>
-            <div className="flex flex-wrap justify-center gap-3">
-              <Badge variant="secondary" className="text-sm hover-glow px-4 py-2">
-                Backend Engineer
-              </Badge>
-              <Badge variant="outline" className="text-sm hover-glow px-4 py-2">
-                System Architect
-              </Badge>
-            </div>
           </div>
           
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
