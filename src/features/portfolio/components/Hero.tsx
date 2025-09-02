@@ -1,6 +1,6 @@
 import { Badge } from '@/components/ui/badge';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import profileImage from '@/assets/profile-picture.jpg';
+import profileImage from '@/assets/profile-picture.jpeg';
 
 const Hero = () => {
   return (
@@ -42,7 +42,7 @@ const Hero = () => {
               <div className="w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden shadow-tech animate-glow">
                 <img 
                   src={profileImage} 
-                  alt="Rayner Mendezl - Backend Engineer" 
+                  alt="Rayner Mendez - Backend Engineer"
                   className="w-full h-full object-cover hover-lift"
                 />
               </div>
@@ -52,7 +52,7 @@ const Hero = () => {
           
           <div className="space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-foreground to-tech-accent bg-clip-text text-transparent">
-              Rayner Mendezl
+              Rayner Mendez
             </h1>
             <div className="relative">
               <p className="text-xl md:text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-tech-muted via-tech-accent to-tech-muted animate-fadeInUp tracking-wide">
@@ -63,8 +63,9 @@ const Hero = () => {
           </div>
           
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Passionate about building scalable, high-performance backend systems. 
-            I craft clean, maintainable code and architect solutions that power modern applications.
+              Talented software engineer with strong experience building and maintaining systems in high-pressure environments.
+              Skilled in problem-solving and teamwork, with a passion for continuous learning and staying current with industry trends.
+              Committed to delivering innovative solutions and adding value to any team.
           </p>
           
           <div className="flex items-center justify-center space-x-8 pt-8">

@@ -29,7 +29,7 @@ const Navigation = () => {
             onClick={() => scrollToSection('hero')}
             className="hidden md:block text-lg font-semibold hover:text-tech-accent transition-colors"
           >
-            Portfolio
+            Rayner Mendez
           </button>
           
           <div className="hidden md:flex space-x-8">
