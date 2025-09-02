@@ -16,7 +16,7 @@ const Hero = () => {
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-tech animate-glow">
                 <img 
                   src={profileImage} 
-                  alt="Alex Richardson - Backend Engineer" 
+                  alt="Rayner Mendez - Backend Engineer" 
                   className="w-full h-full object-cover hover-lift"
                 />
               </div>
@@ -26,7 +26,7 @@ const Hero = () => {
           
           <div className="space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-foreground to-tech-accent bg-clip-text text-transparent">
-              Alex Richardson
+              Rayner Mendez
             </h1>
             <div className="flex flex-wrap justify-center gap-3">
               <Badge variant="secondary" className="text-sm hover-glow px-4 py-2">
@@ -45,7 +45,7 @@ const Hero = () => {
           
           <div className="flex items-center justify-center space-x-8 pt-8">
             <a
-              href="mailto:alex@example.com"
+              href="mailto:rayner@example.com"
               className="flex items-center space-x-2 text-muted-foreground hover:text-tech-accent transition-all duration-300 hover-lift group"
             >
               <Mail size={20} className="group-hover:animate-float" />
