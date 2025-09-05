@@ -47,6 +47,7 @@ const Hero = () => {
                 />
               </div>
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-tech-accent/20 to-transparent"></div>
+              <div className="absolute inset-0 rounded-full blur-lg bg-gradient-to-r from-tech-accent/30 via-tech-accent/40 to-tech-accent/30 opacity-60 animate-glow -z-10 scale-110"></div>
             </div>
           </div>
           
