@@ -92,13 +92,13 @@ const Certifications = () => {
                       ID: {cert.certificationId}
                     </div>
                     <div className="flex items-center gap-4">
+                      <Badge variant="secondary" className="text-xs">
+                        {cert.status}
+                      </Badge>
                       <div className="flex items-center gap-1 text-muted-foreground">
                         <Calendar className="h-4 w-4" />
                         <span>{cert.date}</span>
                       </div>
-                      <Badge variant="secondary" className="text-xs">
-                        {cert.status}
-                      </Badge>
                     </div>
                   </div>
                   
