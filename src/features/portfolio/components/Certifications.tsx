@@ -53,7 +53,7 @@ const Certifications = () => {
           <div className="text-center">
             <div className="relative inline-block">
               <h2 className="text-3xl font-bold mb-4">Certifications</h2>
-              <div className="absolute inset-0 blur-sm bg-gradient-to-r from-tech-accent/20 via-tech-accent/30 to-tech-accent/20 opacity-50 animate-glow -z-10"></div>
+              <div className="absolute inset-0 blur-md bg-tech-accent/15 opacity-60 animate-glow -z-10 scale-110"></div>
             </div>
             <div className="w-16 h-0.5 bg-tech-accent mx-auto"></div>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
