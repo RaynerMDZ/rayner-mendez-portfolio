@@ -87,13 +87,7 @@ const Certifications = () => {
                 <CardContent className="space-y-4">
                   <p className="text-sm text-muted-foreground">{cert.description}</p>
                   
-                  <div className="p-3 bg-muted/30 rounded-lg">
-                    <p className="text-xs font-mono text-muted-foreground">
-                      <span className="font-semibold">Certification ID:</span> {cert.certificationId}
-                    </p>
-                  </div>
-                  
-                  <div className="flex items-center gap-4 text-sm">
+                  <div className="flex items-center justify-between text-sm">
                     <div className="flex items-center gap-1 text-muted-foreground">
                       <Calendar className="h-4 w-4" />
                       <span>{cert.date}</span>
@@ -101,6 +95,9 @@ const Certifications = () => {
                     <Badge variant="secondary" className="text-xs">
                       {cert.status}
                     </Badge>
+                    <div className="text-xs font-mono text-muted-foreground">
+                      ID: {cert.certificationId}
+                    </div>
                   </div>
                   
                   <div className="flex flex-wrap gap-2">
