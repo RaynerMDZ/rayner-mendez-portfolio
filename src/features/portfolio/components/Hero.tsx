@@ -54,11 +54,11 @@ const Hero = () => {
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-foreground to-tech-accent bg-clip-text text-transparent">
               Rayner Mendez
             </h1>
-            <div className="relative">
+            <div className="relative inline-block">
               <p className="text-xl md:text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-tech-muted via-tech-accent to-tech-muted animate-fadeInUp tracking-wide">
                 Software Engineer <span className="text-tech-accent">|</span> Cloud Engineer <span className="text-tech-accent">|</span> LLMs
               </p>
-              <div className="absolute inset-0 blur-sm bg-gradient-to-r from-tech-accent/20 to-transparent opacity-50 animate-glow"></div>
+              <div className="absolute inset-0 blur-sm bg-gradient-to-r from-tech-accent/20 via-tech-accent/30 to-tech-accent/20 opacity-50 animate-glow -z-10"></div>
             </div>
           </div>
           
