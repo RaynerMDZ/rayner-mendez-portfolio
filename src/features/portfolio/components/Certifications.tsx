@@ -51,7 +51,10 @@ const Certifications = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="space-y-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-4">Certifications</h2>
+            <div className="relative inline-block">
+              <h2 className="text-3xl font-bold mb-4">Certifications</h2>
+              <div className="absolute inset-0 blur-sm bg-gradient-to-r from-tech-accent/20 via-tech-accent/30 to-tech-accent/20 opacity-50 animate-glow -z-10"></div>
+            </div>
             <div className="w-16 h-0.5 bg-tech-accent mx-auto"></div>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
               Professional certifications that validate my expertise in cloud technologies, software development, and modern engineering practices.
