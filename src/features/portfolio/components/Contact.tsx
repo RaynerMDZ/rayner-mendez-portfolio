@@ -10,7 +10,7 @@ const Contact = () => {
           <div className="text-center">
             <div className="relative inline-block">
               <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
-              <div className="absolute inset-0 blur-md bg-tech-accent/15 opacity-60 animate-glow -z-10 scale-110"></div>
+              <div className="absolute inset-0 blur-lg bg-tech-accent/25 opacity-80 animate-glow -z-10 scale-110"></div>
             </div>
             <div className="w-16 h-0.5 bg-tech-accent mx-auto"></div>
           </div>
