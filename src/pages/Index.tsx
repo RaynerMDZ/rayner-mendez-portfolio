@@ -1,5 +1,5 @@
 import { Navigation, Footer } from "@/components/layout";
-import { Hero, About, Experience, Skills, Projects, Contact } from "@/features/portfolio";
+import { Hero, About, Experience, Skills, Certifications, Projects, Contact } from "@/features/portfolio";
 
 const Index = () => {
   return (
@@ -10,6 +10,7 @@ const Index = () => {
         <About />
         <Experience />
         <Skills />
+        <Certifications />
         <Projects />
         <Contact />
       </main>
