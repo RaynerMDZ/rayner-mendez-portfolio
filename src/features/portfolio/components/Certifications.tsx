@@ -9,6 +9,8 @@ const Certifications = () => {
       issuer: "Amazon Web Services",
       date: "2023",
       status: "Active",
+      certificationId: "AWS-SAA-C03-2023-001234",
+      link: "https://www.credly.com/badges/aws-solutions-architect",
       description: "Demonstrated expertise in designing distributed systems on AWS",
       skills: ["Cloud Architecture", "AWS Services", "Security", "Cost Optimization"]
     },
@@ -16,7 +18,9 @@ const Certifications = () => {
       title: "Google Cloud Professional Cloud Architect",
       issuer: "Google Cloud",
       date: "2023",
-      status: "Active", 
+      status: "Active",
+      certificationId: "GCP-PCA-2023-567890", 
+      link: "https://www.credential.net/google-cloud-architect",
       description: "Proven ability to design and manage Google Cloud solutions",
       skills: ["GCP Services", "Infrastructure Design", "Security", "Migration"]
     },
@@ -25,6 +29,8 @@ const Certifications = () => {
       issuer: "Oracle",
       date: "2022",
       status: "Active",
+      certificationId: "OCP-JAVA-SE-2022-112233",
+      link: "https://catalog-education.oracle.com/pls/certview/",
       description: "Expert-level knowledge in Java programming and development",
       skills: ["Java", "OOP", "Collections", "Concurrency"]
     },
@@ -33,6 +39,8 @@ const Certifications = () => {
       issuer: "Docker",
       date: "2022",
       status: "Active",
+      certificationId: "DCA-2022-445566",
+      link: "https://credentials.docker.com/",
       description: "Proficiency in containerization and Docker ecosystem",
       skills: ["Containerization", "Docker", "Orchestration", "DevOps"]
     }
@@ -66,11 +74,24 @@ const Certifications = () => {
                         <p className="text-sm text-muted-foreground font-medium">{cert.issuer}</p>
                       </div>
                     </div>
-                    <ExternalLink className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer" />
+                    <a 
+                      href={cert.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="opacity-0 group-hover:opacity-100 transition-opacity"
+                    >
+                      <ExternalLink className="h-4 w-4 text-muted-foreground hover:text-tech-accent transition-colors cursor-pointer" />
+                    </a>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-sm text-muted-foreground">{cert.description}</p>
+                  
+                  <div className="p-3 bg-muted/30 rounded-lg">
+                    <p className="text-xs font-mono text-muted-foreground">
+                      <span className="font-semibold">Certification ID:</span> {cert.certificationId}
+                    </p>
+                  </div>
                   
                   <div className="flex items-center gap-4 text-sm">
                     <div className="flex items-center gap-1 text-muted-foreground">
