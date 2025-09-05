@@ -47,13 +47,13 @@ const Certifications = () => {
   ];
 
   return (
-    <section id="certifications" className="py-20 bg-background">
+    <section id="certifications" className="py-20">
       <div className="max-w-6xl mx-auto px-6">
         <div className="space-y-8">
           <div className="text-center">
             <div className="relative inline-block">
               <h2 className="text-3xl font-bold mb-4">Certifications</h2>
-              <div className="absolute inset-0 blur-lg bg-tech-accent/25 opacity-80 animate-glow -z-10 scale-110"></div>
+              <div className="absolute inset-0 blur-lg bg-tech-accent/10 opacity-80 animate-glow -z-10 scale-110"></div>
             </div>
             <div className="w-16 h-0.5 bg-tech-accent mx-auto"></div>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">

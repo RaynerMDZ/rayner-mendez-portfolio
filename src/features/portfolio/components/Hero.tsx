@@ -59,7 +59,7 @@ const Hero = () => {
               <p className="text-xl md:text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-tech-muted via-tech-accent to-tech-muted animate-fadeInUp tracking-wide">
                 Software Engineer <span className="text-tech-accent">|</span> Cloud Engineer <span className="text-tech-accent">|</span> LLMs
               </p>
-              <div className="absolute inset-0 blur-sm bg-gradient-to-r from-tech-accent/20 via-tech-accent/30 to-tech-accent/20 opacity-50 animate-glow -z-10"></div>
+              <div className="absolute inset-0 blur-sm bg-gradient-to-r from-tech-accent/20 via-tech-accent/30 to-tech-accent/20 opacity-40 animate-glow -z-10"></div>
             </div>
           </div>
           
