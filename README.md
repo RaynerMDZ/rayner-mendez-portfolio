@@ -36,6 +36,10 @@ npm i
 npm run dev
 ```
 
+Optional environment variables:
+
+- `VITE_BLOG_URL`: external blog URL used by the portfolio `Blog` links (defaults to `http://localhost:3000`).
+
 **Edit a file directly in GitHub**
 
 - Navigate to the desired file(s).

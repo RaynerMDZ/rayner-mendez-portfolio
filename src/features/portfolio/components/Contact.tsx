@@ -1,114 +1,122 @@
-import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Mail, Github, Linkedin, MapPin, Calendar } from 'lucide-react';
+import { Calendar, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+
+const contactLinks = [
+  {
+    label: "raynermendezg@gmail.com",
+    subLabel: "Primary Email",
+    href: "mailto:raynermendezg@gmail.com",
+    icon: Mail,
+  },
+  {
+    label: "github.com/raynermdz",
+    subLabel: "Open Source Portfolio",
+    href: "https://github.com/raynermdz",
+    icon: Github,
+  },
+  {
+    label: "linkedin.com/in/raynermendez",
+    subLabel: "Professional Network",
+    href: "https://linkedin.com/in/raynermendez",
+    icon: Linkedin,
+  },
+];
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20">
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="space-y-8">
-          <div className="text-center">
-            <div className="relative inline-block">
-              <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
-              <div className="absolute inset-0 blur-lg bg-tech-accent/10 opacity-80 animate-glow -z-10 scale-110"></div>
-            </div>
-            <div className="w-16 h-0.5 bg-tech-accent mx-auto"></div>
-          </div>
-          
-          <div className="text-center max-w-2xl mx-auto">
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm always interested in discussing new opportunities, challenging projects, 
-              or innovative ideas in backend engineering. Feel free to reach out!
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="hover-lift transition-all duration-300">
-              <CardContent className="p-6 space-y-6">
-                <h3 className="text-xl font-semibold">Professional Links</h3>
-                
-                <div className="space-y-4">
-                  <a
-                    href="mailto:raynermendezg@gmail.com"
-                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-all duration-300 group hover-lift"
-                  >
-                    <Mail size={20} className="text-tech-accent" />
-                    <div>
-                      <div className="font-medium group-hover:text-tech-accent transition-colors">
-                        raynermendezg@gmail.com
+    <section id="contact" className="py-24">
+      <div className="section-shell">
+        <div className="mb-14 max-w-3xl">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-primary mb-4">
+            Contact
+          </p>
+          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+            Open to impactful opportunities and collaborations.
+          </h2>
+          <div className="section-divider" />
+          <p className="mt-6 text-slate-500 dark:text-slate-400 leading-relaxed">
+            I&apos;m always interested in discussing challenging projects and
+            innovative ideas in backend, cloud, and AI engineering.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <Card>
+            <CardContent className="p-6 sm:p-8 space-y-6">
+              <h3 className="text-2xl font-bold tracking-tight">Professional Links</h3>
+              <div className="space-y-3">
+                {contactLinks.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <a
+                      key={item.label}
+                      href={item.href}
+                      target={item.href.startsWith("http") ? "_blank" : undefined}
+                      rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                      className="group flex min-h-12 items-center gap-3 rounded-xl border border-slate-200/80 bg-white/80 px-4 py-3 transition-all hover:border-primary/40 hover:bg-primary/5 dark:border-slate-700/80 dark:bg-slate-900/40 dark:hover:bg-slate-800/50"
+                    >
+                      <Icon size={18} className="text-primary" />
+                      <div>
+                        <p className="font-medium text-slate-700 transition-colors group-hover:text-primary dark:text-slate-200">
+                          {item.label}
+                        </p>
+                        <p className="text-xs text-slate-500 dark:text-slate-400">
+                          {item.subLabel}
+                        </p>
                       </div>
-                      <div className="text-sm text-muted-foreground">Primary Email</div>
-                    </div>
-                  </a>
-                  
-                  <a
-                    href="https://github.com/raynermdz"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-all duration-300 group hover-lift"
-                  >
-                    <Github size={20} className="text-tech-accent" />
-                    <div>
-                      <div className="font-medium group-hover:text-tech-accent transition-colors">
-                        github.com/raynermdz
-                      </div>
-                      <div className="text-sm text-muted-foreground">Open Source Portfolio</div>
-                    </div>
-                  </a>
-                  
-                  <a
-                    href="https://linkedin.com/in/raynermendez"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-all duration-300 group hover-lift"
-                  >
-                    <Linkedin size={20} className="text-tech-accent" />
-                    <div>
-                      <div className="font-medium group-hover:text-tech-accent transition-colors">
-                        linkedin.com/in/raynermendez
-                      </div>
-                      <div className="text-sm text-muted-foreground">Professional Network</div>
-                    </div>
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="hover-lift transition-all duration-300">
-              <CardContent className="p-6 space-y-6">
-                <h3 className="text-xl font-semibold">Currently</h3>
-                
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <MapPin size={20} className="text-tech-accent mt-0.5" />
-                    <div>
-                      <div className="font-medium">Jersey City, NJ</div>
-                      <div className="text-sm text-muted-foreground">Open to remote opportunities</div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <Calendar size={20} className="text-tech-accent mt-0.5" />
-                    <div>
-                      <div className="font-medium">Available for projects</div>
-                      <div className="text-sm text-muted-foreground">Full-time & consulting</div>
-                    </div>
+                    </a>
+                  );
+                })}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6 sm:p-8 space-y-6">
+              <h3 className="text-2xl font-bold tracking-tight">Currently</h3>
+              <div className="space-y-4 text-slate-600 dark:text-slate-300">
+                <div className="flex items-start gap-3">
+                  <MapPin className="h-5 w-5 mt-0.5 text-primary" />
+                  <div>
+                    <p className="font-medium">Jersey City, NJ</p>
+                    <p className="text-sm text-slate-500 dark:text-slate-400">
+                      Open to remote opportunities
+                    </p>
                   </div>
                 </div>
-                
-                <div className="pt-4">
-                  <h4 className="font-medium mb-3">Interested in:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">Software Architecture</Badge>
-                    <Badge variant="secondary">System Design</Badge>
-                    <Badge variant="secondary">AI</Badge>
-                    <Badge variant="secondary">LLMs</Badge>
-                    <Badge variant="secondary">Open Source</Badge>
+                <div className="flex items-start gap-3">
+                  <Calendar className="h-5 w-5 mt-0.5 text-primary" />
+                  <div>
+                    <p className="font-medium">Available for projects</p>
+                    <p className="text-sm text-slate-500 dark:text-slate-400">
+                      Full-time and consulting
+                    </p>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
+              </div>
+
+              <div>
+                <p className="text-sm font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-3">
+                  Interested In
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["Software Architecture", "System Design", "AI", "LLMs", "Open Source"].map(
+                    (item) => (
+                      <Badge key={item} variant="secondary" className="cursor-default">
+                        {item}
+                      </Badge>
+                    )
+                  )}
+                </div>
+              </div>
+
+              <Button asChild className="w-full sm:w-auto">
+                <a href="mailto:raynermendezg@gmail.com">Start a Conversation</a>
+              </Button>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

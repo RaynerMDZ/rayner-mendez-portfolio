@@ -1,85 +1,94 @@
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+const skillCategories = [
+  {
+    title: "Programming Languages",
+    skills: ["Java", "Python", "JavaScript", "TypeScript", "SQL"],
+  },
+  {
+    title: "Frameworks & Libraries",
+    skills: ["Spring Boot", "Angular", "Node.js", "Express.js", "JPA/Hibernate", "Tailwind.css"],
+  },
+  {
+    title: "Databases & Storage",
+    skills: ["Oracle", "PostgreSQL", "MySQL", "MongoDB", "Redis"],
+  },
+  {
+    title: "Cloud & DevOps",
+    skills: ["Google Cloud Platform", "Docker", "OpenShift", "Lightspeed", "Harness"],
+  },
+  {
+    title: "Message Queues & Streaming",
+    skills: ["Apache Kafka", "RabbitMQ"],
+  },
+  {
+    title: "Monitoring & Observability",
+    skills: ["Prometheus", "Grafana", "ELK Stack"],
+  },
+  {
+    title: "Architecture & Patterns",
+    skills: ["Microservices", "Event-Driven", "Domain-Driven Design", "REST APIs", "GraphQL"],
+  },
+  {
+    title: "Testing & Quality",
+    skills: [
+      "JUnit",
+      "Mockito",
+      "Integration Testing",
+      "Load Testing",
+      "TDD",
+      "Regression Testing",
+      "Code Coverage",
+      "Code Review",
+      "Continuous Integration",
+      "Continuous Deployment",
+      "Continuous Monitoring",
+    ],
+  },
+];
 
 const Skills = () => {
-  const skillCategories = [
-    {
-      title: "Programming Languages",
-      skills: ["Java", "Python", "JavaScript", "TypeScript", "SQL"]
-    },
-    {
-      title: "Frameworks & Libraries",
-      skills: ["Spring Boot", "Angular", "Node.js", "Express.js", "JPA/Hibernate", "Tailwind.css"]
-    },
-    {
-      title: "Databases & Storage",
-      skills: ["Oracle", "PostgreSQL", "MySQL", "MongoDB", "Redis"]
-    },
-    {
-      title: "Cloud & DevOps",
-      skills: ["Google Cloud Platform", "Docker", "OpenShift", "Lightspeed", "Harness"]
-    },
-    {
-      title: "Message Queues & Streaming",
-      skills: ["Apache Kafka", "RabbitMQ"]
-    },
-    {
-      title: "Monitoring & Observability",
-      skills: ["Prometheus", "Grafana", "ELK Stack"]
-    },
-    {
-      title: "Architecture & Patterns",
-      skills: ["Microservices", "Event-Driven", "Domain-Driven Design", "REST APIs", "GraphQL"]
-    },
-    {
-      title: "Testing & Quality",
-      skills: ["JUnit", "Mockito", "Integration Testing", "Load Testing", "TDD", "Regression Testing", "Code Coverage", "Code Review", "Continuous Integration", "Continuous Deployment", "Continuous Monitoring"]
-    }
-  ];
-
   return (
-    <section id="skills" className="py-20">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="space-y-8">
-          <div className="text-center">
-            <div className="relative inline-block">
-              <h2 className="text-3xl font-bold mb-4">Technical Skills</h2>
-              <div className="absolute inset-0 blur-lg bg-tech-accent/10 opacity-80 animate-glow -z-10 scale-110"></div>
-            </div>
-            <div className="w-16 h-0.5 bg-tech-accent mx-auto"></div>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
-            {skillCategories.map((category, index) => (
-              <Card key={index} className="h-full hover-lift transition-all duration-300 group">
-                <CardHeader>
-                  <CardTitle className="text-lg font-semibold text-tech-accent group-hover:text-primary transition-colors">
-                    {category.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill, idx) => (
-                      <Badge 
-                        key={idx} 
-                        variant="secondary" 
-                        className="text-sm hover:bg-tech-accent hover:text-white transition-all duration-300 hover:scale-105 cursor-default"
-                      >
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          
-          <div className="text-center pt-8">
-            <p className="text-muted-foreground">
-              Always learning and staying up-to-date with the latest technologies and best practices in backend development.
-            </p>
-          </div>
+    <section id="skills" className="py-24 bg-white/60 dark:bg-slate-900/30">
+      <div className="section-shell">
+        <div className="mb-14 max-w-3xl">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-primary mb-4">
+            Technical Skills
+          </p>
+          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+            Modern backend and cloud engineering toolkit.
+          </h2>
+          <div className="section-divider" />
         </div>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {skillCategories.map((category) => (
+            <Card key={category.title} className="h-full">
+              <CardHeader>
+                <CardTitle className="text-lg md:text-xl">{category.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2.5">
+                  {category.skills.map((skill) => (
+                    <Badge
+                      key={skill}
+                      variant="secondary"
+                      className="cursor-default hover:bg-primary hover:text-primary-foreground transition-colors"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <p className="mt-10 text-slate-500 dark:text-slate-400">
+          Always learning and staying up-to-date with practical tools, patterns, and
+          production-ready practices.
+        </p>
       </div>
     </section>
   );

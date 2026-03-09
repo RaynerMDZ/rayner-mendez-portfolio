@@ -1,99 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Professional Backend Engineer Portfolio Design System */
-
 @layer base {
   :root {
-    /* Core color palette - Professional grayscale with technical blue accent */
-    --background: 0 0% 99%;
-    --foreground: 220 13% 18%;
-
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
     --card: 0 0% 100%;
-    --card-foreground: 220 13% 18%;
-
+    --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 18%;
-
-    /* Technical blue primary */
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
-
-    /* Subtle grays for sections */
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 13% 18%;
-
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
-
-    --accent: 217 91% 95%;
-    --accent-foreground: 217 91% 60%;
-
+    --popover-foreground: 222 47% 11%;
+    --primary: 218 80% 40%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 40%;
+    --accent: 214 32% 91%;
+    --accent-foreground: 222 47% 11%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 217 91% 60%;
-
-    --radius: 0.375rem;
-
-    /* Technical theme specific colors */
-    --tech-accent: 217 91% 60%;
-    --tech-muted: 220 9% 46%;
-    --section-bg: 220 14% 98%;
-    
-    /* Gradients */
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--section-bg)));
-    --gradient-tech: linear-gradient(135deg, hsl(var(--tech-accent) / 0.1), hsl(var(--tech-accent) / 0.05));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--card) / 0.8));
-    
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(var(--foreground) / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(var(--foreground) / 0.1), 0 2px 4px -1px hsl(var(--foreground) / 0.06);
-    --shadow-lg: 0 10px 15px -3px hsl(var(--foreground) / 0.1), 0 4px 6px -2px hsl(var(--foreground) / 0.05);
-    --shadow-tech: 0 4px 20px hsl(var(--tech-accent) / 0.15);
-    
-    /* Transitions */
-    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --border: 214 32% 89%;
+    --input: 214 32% 89%;
+    --ring: 218 80% 40%;
+    --radius: 0.85rem;
+    --tech-accent: var(--primary);
+    --tech-muted: var(--muted-foreground);
+    --section-bg: 210 40% 99%;
+    --gradient-tech: linear-gradient(145deg, hsl(218 80% 40% / 0.09), hsl(205 86% 92% / 0.22));
+    --shadow-sm: 0 1px 3px 0 hsl(222 47% 11% / 0.08);
+    --shadow-md: 0 10px 18px -9px hsl(222 47% 11% / 0.2);
+    --shadow-lg: 0 18px 40px -20px hsl(222 47% 11% / 0.24);
+    --shadow-tech: 0 20px 44px -24px hsl(218 80% 40% / 0.45);
+    --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .dark {
-    --background: 220 27% 8%;
-    --foreground: 220 14% 96%;
-
-    --card: 220 27% 8%;
-    --card-foreground: 220 14% 96%;
-
-    --popover: 220 27% 8%;
-    --popover-foreground: 220 14% 96%;
-
-    --primary: 217 91% 60%;
-    --primary-foreground: 220 27% 8%;
-
-    --secondary: 220 27% 12%;
-    --secondary-foreground: 220 14% 96%;
-
-    --muted: 220 27% 12%;
-    --muted-foreground: 220 9% 64%;
-
-    --accent: 220 27% 12%;
-    --accent-foreground: 217 91% 60%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 220 14% 96%;
-
-    --border: 220 27% 18%;
-    --input: 220 27% 18%;
-    --ring: 217 91% 60%;
-    
-    --tech-accent: 217 91% 60%;
-    --tech-muted: 220 9% 64%;
-    --section-bg: 220 27% 10%;
+    --background: 229 22% 16%;
+    --foreground: 210 40% 98%;
+    --card: 229 22% 19%;
+    --card-foreground: 210 40% 98%;
+    --popover: 229 22% 19%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 218 80% 58%;
+    --primary-foreground: 229 22% 16%;
+    --secondary: 229 22% 22%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 229 22% 22%;
+    --muted-foreground: 215 20% 72%;
+    --accent: 229 22% 24%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 52%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 228 17% 31%;
+    --input: 228 17% 31%;
+    --ring: 218 80% 58%;
+    --section-bg: 229 22% 19%;
+    --gradient-tech: linear-gradient(145deg, hsl(226 100% 70% / 0.18), hsl(229 22% 16% / 0.5));
+    --shadow-tech: 0 24px 44px -28px hsl(226 100% 70% / 0.55);
   }
 }
 
@@ -103,20 +68,38 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+  }
+
+  html.dark body {
+    background-image:
+      radial-gradient(1200px 500px at 10% -20%, rgba(99, 102, 241, 0.14), transparent 60%),
+      radial-gradient(1000px 420px at 100% -10%, rgba(129, 140, 248, 0.08), transparent 60%);
+  }
+
+  main {
+    position: relative;
+    z-index: 10;
   }
 
   .font-mono {
-    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
   }
 
-  /* Smooth scrolling */
+  .font-display {
+    font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .font-serif {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+  }
+
   html {
     scroll-behavior: smooth;
   }
 
-  /* Custom utilities */
   .text-tech-accent {
     color: hsl(var(--tech-accent));
   }
@@ -137,7 +120,6 @@
     box-shadow: var(--shadow-tech);
   }
 
-  /* Animations */
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -195,5 +177,21 @@
 
   .hover-glow:hover {
     box-shadow: var(--shadow-tech);
+  }
+
+  .section-shell {
+    @apply max-w-7xl mx-auto px-6;
+  }
+
+  .section-headline {
+    @apply text-4xl md:text-5xl font-extrabold tracking-tight leading-tight;
+  }
+
+  .section-divider {
+    @apply h-1 w-20 rounded-full bg-primary;
+  }
+
+  section[id] {
+    scroll-margin-top: 6rem;
   }
 }

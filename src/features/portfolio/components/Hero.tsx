@@ -1,100 +1,115 @@
-import { Badge } from '@/components/ui/badge';
-import { Github, Linkedin, Mail } from 'lucide-react';
-import profileImage from '@/assets/profile-picture.jpeg';
+import { Button } from "@/components/ui/button";
+import { Github, Linkedin, Mail } from "lucide-react";
+import profileImage from "@/assets/profile-picture.jpeg";
+import { getBlogUrl } from "@/lib/site";
+
+const blogUrl = getBlogUrl();
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
-      {/* Enhanced Background */}
-      <div className="absolute inset-0 gradient-tech opacity-50"></div>
-      
-      {/* Geometric patterns */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-20 left-10 w-32 h-32 border border-tech-accent/30 rounded-full animate-float"></div>
-        <div className="absolute top-40 right-20 w-24 h-24 border border-tech-accent/20 rounded-lg rotate-45 animate-float" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-40 left-20 w-20 h-20 bg-tech-accent/10 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
-        <div className="absolute bottom-20 right-10 w-16 h-16 border border-tech-accent/25 rounded-full animate-float" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-tech-accent/40 rounded-full animate-pulse"></div>
-        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-tech-accent/50 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
-        <div className="absolute bottom-1/3 left-1/2 w-1.5 h-1.5 bg-tech-accent/30 rounded-full animate-pulse" style={{animationDelay: '3s'}}></div>
+    <section
+      id="hero"
+      className="relative overflow-hidden pt-20 pb-24 md:pt-28 md:pb-32 min-h-[calc(100vh-5rem)] flex items-center"
+    >
+      <div className="absolute inset-0 gradient-tech opacity-60" />
+      <div className="absolute inset-0 pointer-events-none opacity-10">
+        <div
+          className="absolute -top-24 left-[5%] h-56 w-56 rounded-full bg-primary/35 blur-3xl animate-float"
+          style={{ animationDelay: "0.5s" }}
+        />
+        <div
+          className="absolute bottom-0 right-[8%] h-72 w-72 rounded-full bg-sky-400/30 blur-3xl animate-float"
+          style={{ animationDelay: "2s" }}
+        />
+        <div
+          className="absolute top-1/2 left-1/2 h-44 w-44 rounded-full bg-cyan-300/20 blur-2xl animate-float"
+          style={{ animationDelay: "3.5s" }}
+        />
       </div>
-      
-      {/* Additional background elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 right-1/4 w-40 h-40 bg-gradient-to-br from-tech-accent/20 to-transparent rounded-full blur-xl animate-float" style={{animationDelay: '4s'}}></div>
-        <div className="absolute bottom-10 left-1/4 w-60 h-60 bg-gradient-to-tl from-tech-accent/15 to-transparent rounded-full blur-2xl animate-float" style={{animationDelay: '6s'}}></div>
-        <div className="absolute top-1/2 right-10 w-32 h-32 bg-gradient-to-l from-tech-accent/25 to-transparent rounded-full blur-lg animate-float" style={{animationDelay: '2.5s'}}></div>
-      </div>
-      
-      {/* Grid pattern overlay */}
-      <div className="absolute inset-0 opacity-[0.02]">
-        <div className="w-full h-full" style={{
-          backgroundImage: `linear-gradient(hsl(var(--tech-accent)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--tech-accent)) 1px, transparent 1px)`,
-          backgroundSize: '50px 50px'
-        }}></div>
-      </div>
-      
-      <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-        <div className="space-y-8 animate-fadeInUp">
-          {/* Profile Picture */}
-          <div className="flex justify-center mb-8">
-            <div className="relative">
-              <div className="w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden shadow-tech animate-glow">
-                <img 
-                  src={profileImage} 
-                  alt="Rayner Mendez - Backend Engineer"
-                  className="w-full h-full object-cover hover-lift"
-                />
-              </div>
-              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-tech-accent/20 to-transparent"></div>
-              <div className="absolute inset-0 rounded-full blur-lg bg-gradient-to-r from-tech-accent/30 via-tech-accent/40 to-tech-accent/30 opacity-60 animate-glow -z-10 scale-110"></div>
-            </div>
-          </div>
-          
-          <div className="space-y-6">
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-foreground to-tech-accent bg-clip-text text-transparent">
-              Rayner Mendez
+
+      <div className="section-shell relative z-10">
+        <div className="grid grid-cols-1 gap-12 items-center lg:grid-cols-2">
+          <div className="order-2 lg:order-2 text-center lg:text-left animate-fadeInUp">
+            <span className="inline-flex rounded-full bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6">
+              Software Engineer
+            </span>
+            <h1 className="section-headline mb-6">
+              Building cloud-native systems and{" "}
+              <span className="text-primary">AI-driven solutions</span>.
             </h1>
-            <div className="relative inline-block">
-              <p className="text-xl md:text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-tech-muted via-tech-accent to-tech-muted animate-fadeInUp tracking-wide">
-                Software Engineer <span className="text-tech-accent">|</span> Cloud Engineer <span className="text-tech-accent">|</span> LLMs
-              </p>
-              <div className="absolute inset-0 blur-sm bg-gradient-to-r from-tech-accent/20 via-tech-accent/30 to-tech-accent/20 opacity-40 animate-glow -z-10"></div>
+            <p className="max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-300 mx-auto lg:mx-0">
+              Talented software engineer with strong experience building and maintaining
+              systems in high-pressure environments. Focused on practical delivery,
+              resilient architecture, and continuous learning.
+            </p>
+
+            <div className="mt-10 flex flex-wrap gap-4 justify-center lg:justify-start">
+              <Button
+                onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+              >
+                View Projects
+              </Button>
+              <Button
+                variant="outline"
+                onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+              >
+                Contact Me
+              </Button>
+              <Button asChild variant="ghost">
+                <a href={blogUrl} target="_blank" rel="noopener noreferrer">
+                  Read Blog
+                </a>
+              </Button>
+            </div>
+
+            <div className="mt-8 flex items-center gap-5 text-sm text-slate-500 dark:text-slate-400 justify-center lg:justify-start">
+              <a
+                href="mailto:raynermendezg@gmail.com"
+                className="inline-flex items-center gap-2 hover:text-primary transition-colors"
+              >
+                <Mail size={18} />
+                Email
+              </a>
+              <a
+                href="https://github.com/raynermdz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 hover:text-primary transition-colors"
+              >
+                <Github size={18} />
+                GitHub
+              </a>
+              <a
+                href="https://linkedin.com/in/raynermendez"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 hover:text-primary transition-colors"
+              >
+                <Linkedin size={18} />
+                LinkedIn
+              </a>
             </div>
           </div>
-          
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Talented software engineer with strong experience building and maintaining systems in high-pressure environments.
-              Skilled in problem-solving and teamwork, with a passion for continuous learning and staying current with industry trends.
-              Committed to delivering innovative solutions and adding value to any team.
-          </p>
-          
-          <div className="flex items-center justify-center space-x-8 pt-8">
-            <a
-              href="mailto:raynermendezg@gmail.com"
-              className="flex items-center space-x-2 text-muted-foreground hover:text-tech-accent transition-all duration-300 hover-lift group"
-            >
-              <Mail size={20} className="group-hover:animate-float" />
-              <span className="font-medium">Email</span>
-            </a>
-            <a
-              href="https://github.com/raynermdz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 text-muted-foreground hover:text-tech-accent transition-all duration-300 hover-lift group"
-            >
-              <Github size={20} className="group-hover:animate-float" />
-              <span className="font-medium">GitHub</span>
-            </a>
-            <a
-              href="https://linkedin.com/in/raynermendez"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 text-muted-foreground hover:text-tech-accent transition-all duration-300 hover-lift group"
-            >
-              <Linkedin size={20} className="group-hover:animate-float" />
-              <span className="font-medium">LinkedIn</span>
-            </a>
+
+          <div className="order-1 lg:order-1 flex justify-center lg:justify-start animate-fadeInUp">
+            <div className="relative group">
+              <div className="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-primary/35 via-sky-500/30 to-cyan-500/30 blur-md opacity-60 group-hover:opacity-80 transition duration-500" />
+              <div className="relative rounded-3xl overflow-hidden border border-white/70 dark:border-slate-700/70 bg-slate-100 dark:bg-slate-800 w-[min(86vw,420px)] aspect-[4/5] shadow-tech animate-glow">
+                <img
+                  src={profileImage}
+                  alt="Rayner Mendez"
+                  className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/70 via-slate-900/25 to-transparent p-6">
+                  <p className="text-white text-base font-semibold tracking-wide">
+                    Rayner Mendez
+                  </p>
+                  <p className="text-white/85 text-xs md:text-sm">
+                    Generative AI Engineer · Software Engineer · Cloud Engineer
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
